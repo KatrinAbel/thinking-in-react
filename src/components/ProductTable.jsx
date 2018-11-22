@@ -8,9 +8,10 @@ export default function ProductTable({products}) {
   let rows = []
   for (let i = 0; i < products.length; i++) {
     if (i === 0 || products[i].category !== products[i-1].category) {
-      rows.push(<ProductCategoryRow key={i} category={products[i].category} />)
+      rows.push(<ProductCategoryRow key={"c-"+i} category={products[i].category} />)
     }
-    rows.push(<ProductRow key={i} name={products[i].name} price={products[i].price} stocked={products[i].stocked} />)
+    // rows.push(<ProductRow key={"p-"+i} name={products[i].name} price={products[i].price} stocked={products[i].stocked} />)
+    rows.push(<ProductRow key={"p-"+i} {...products[i]}  />)
   }
   
   return (
