@@ -12,3 +12,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.FilterableProductTable {
+  border: 1px solid orange;
+  padding: 10px;
+}
+.SearchBar {
+  border: 1px solid blue;
+  padding: 10px;
+}
+.ProductTable {
+  border: 1px solid green;
+  padding: 10px;
+}
+.ProductCategoryRow {
+  background: rgba(0,255,255,0.2);
+  padding: 10px;
+}
+.ProductRow {
+  background: rgba(255,0,0,0.2);
+  padding: 10px;
+}
